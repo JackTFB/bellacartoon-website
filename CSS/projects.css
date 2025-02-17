@@ -1,0 +1,52 @@
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.project {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    background-color: #893271;
+    border: #CF7793 2px solid;
+    border-radius: 15px;
+    margin: 40px auto;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+}
+
+.project h2 {
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 20px 0;
+    align-self: flex-start;
+}
+
+.project p {
+    font-size: 1vw;
+    margin: 20px 0;
+    align-self: flex-end;
+    font-family: sans-serif;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #893271;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
