@@ -3,12 +3,17 @@ async function fetchPortfolioImages() {
     const repoName = 'bellacartoon-website';
     const path = 'Assets/Images/Portfolio';
     const url = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${path}`;
+    const spinner = document.querySelector('.spinner');
+    const portfolio = document.querySelector('.portfolio');
+
 
     try {
+        spinner.style.display = 'block';
         const response = await fetch(url);
         const data = await response.json();
+        spinner.style.display = 'none';
 
-        const portfolio = document.querySelector('.portfolio');
+
 
         for (let index = data.length - 1; index >= 0; index--) {
             const file = data[index];
@@ -20,8 +25,15 @@ async function fetchPortfolioImages() {
                 img.src = file.download_url;
                 img.alt = file.name;
                 img.classList.add('portfolioimage');
-                portfolioitem.appendChild(img);
-                portfolio.appendChild(portfolioitem);
+                img.style.display = 'none';
+
+                img.addEventListener('load', () => {
+                    img.style.display = 'block';
+                    portfolioitem.appendChild(img);
+                    portfolio.appendChild(portfolioitem);
+                });
+
+
             }
         }
     }
