@@ -10,10 +10,11 @@ async function fetchPortfolioImages() {
 
         const portfolio = document.querySelector('.portfolio');
 
-        data.forEach((file => {
+        data.forEach(((file, index) => {
             if (file.type === 'file' && file.name.match(/\.(jpe?g|png|gif)$/)) {
                 const portfolioitem = document.createElement('div');
                 portfolioitem.className = 'portfolioitem';
+                portfolioitem.style.animationDelay = `${index * 0.3}s`;
                 const img = document.createElement('img');
                 img.src = file.download_url;
                 img.alt = file.name;
