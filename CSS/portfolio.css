@@ -8,18 +8,33 @@
     }
 }
 
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.portfolio h1 {
+    align-self: flex-start;
+    text-align: center;
+    margin: 20px;
+}
+
 .portfolioitem {
     opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-left: 0.5vw;
     padding: 20px;
     width: 20vh;
     background-color: #893271;
     border: #CF7793 2px solid;
     border-radius: 15px;
-    margin: 40px auto;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
