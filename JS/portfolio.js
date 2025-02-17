@@ -10,7 +10,8 @@ async function fetchPortfolioImages() {
 
         const portfolio = document.querySelector('.portfolio');
 
-        data.forEach(((file, index) => {
+        for (let index = data.length - 1; index >= 0; index--) {
+            const file = data[index];
             if (file.type === 'file' && file.name.match(/\.(jpe?g|png|gif)$/)) {
                 const portfolioitem = document.createElement('div');
                 portfolioitem.className = 'portfolioitem';
@@ -22,7 +23,7 @@ async function fetchPortfolioImages() {
                 portfolioitem.appendChild(img);
                 portfolio.appendChild(portfolioitem);
             }
-        }));
+        }
     }
     catch (error) {
         console.error('Error fetching images:', error);
