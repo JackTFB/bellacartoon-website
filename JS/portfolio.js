@@ -20,18 +20,14 @@ async function fetchPortfolioImages() {
             if (file.type === 'file' && file.name.match(/\.(jpe?g|png|gif)$/)) {
                 const portfolioitem = document.createElement('div');
                 portfolioitem.className = 'portfolioitem';
-                portfolioitem.style.animationDelay = `${index * 0.3}s`;
+                portfolioitem.style.animationDelay = `${(data.length - index) * 0.3}s`;
                 const img = document.createElement('img');
                 img.src = file.download_url;
                 img.alt = file.name;
                 img.classList.add('portfolioimage');
-                img.style.display = 'none';
-
-                img.addEventListener('load', () => {
-                    img.style.display = 'block';
-                    portfolioitem.appendChild(img);
-                    portfolio.appendChild(portfolioitem);
-                });
+                img.style.display = 'block';
+                portfolioitem.appendChild(img);
+                portfolio.appendChild(portfolioitem);
 
 
             }
