@@ -1,3 +1,13 @@
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .commissions ul {
     display: flex;
     justify-content: center;
@@ -6,18 +16,26 @@
     margin: 0;
 }
 
+
+
 .commissions ul li {
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto 0.5vw;
     height: 10vh;
-    width: 10vw;
+    width: auto;
+    max-width: 15vw;
     border: 0.5vh solid #893271;
     border-radius: 5vh;
     background-size: 100%;
     background-repeat: no-repeat;text-align: center;
     overflow: hidden;
+    animation: fadeInAnimation ease 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     transition: transform 0.3s ease;
 }
 
@@ -46,6 +64,7 @@
 
 
 .commissioninfo {
+    opacity: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -54,6 +73,10 @@
     padding: 1vw 5vh;
     margin: 3vh 2vw;
     background-color: #893271;
+    animation: fadeInAnimation ease 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .commissioninfo h2 {
