@@ -29,6 +29,7 @@ body {
     padding: 10px 20px;
     background-color: #893271;
     height: 60px;
+    border-bottom: 2px solid #CF7793;
 }
 
 @keyframes wobble {
@@ -97,8 +98,9 @@ body {
     width: 100%;
     background-color: #893271;
     text-align: center;
-    margin: auto;
+    margin: 0 0;
     color: white;
+    border-top: 2px solid #CF7793;
 }
 
 .pagetitle h1{

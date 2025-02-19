@@ -1,55 +1,91 @@
-.commissionentry {
+.commissions ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.commissions ul li {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin: auto 0.5vw;
+    height: 10vh;
+    width: 10vw;
+    border: 0.5vh solid #893271;
+    border-radius: 5vh;
+    background-size: 100%;
+    background-repeat: no-repeat;text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.commissions ul li:hover {
+    transform: scale(1.1);
+}
+
+.commissions ul li:active {
+    transform: scale(0.9);
+}
+
+.commissions ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-shadow: black 0.1vh 0.1vh 0.2vh;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.commissioninfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     border: 2px solid #ffffff;
     border-radius: 5vh;
-    padding: 5vw 5vh;
-    margin: 2vw 10%;
-    gap: 5vw;
-
+    padding: 1vw 5vh;
+    margin: 3vh 2vw;
     background-color: #893271;
 }
 
-.commissionentry p {
+.commissioninfo h2 {
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+}
+
+.commissioninfo h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+    color: white;
+}
+
+.commissioninfo p {
     text-align: center;
     font-size: 1.5em;
     font-weight: 400;
     color: white;
 }
 
-.commissionentry a {
+.commissioninfo a {
+    font-size: 1.5em;
     text-decoration: none;
     color: white;
     border: 2px solid white;
     border-radius: 5vh;
     margin: auto;
     padding: 0.6vw 1.4vh;
-    transition: color 0.3s ease, padding 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.commissionentry a:hover {
+.commissioninfo a:hover {
     color: #CF7793;
-    padding: 0.8vw 1.6vh;
-}
-
-
-
-.commissionentryinfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.commissionentryinfo h2 {
-    font-size: 1.5em;
-    font-weight: 400;
-
-}
-
-.commissionentryinfo img {
-    height: 25vh;
-    margin: 10px 0;
 }
