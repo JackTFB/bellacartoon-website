@@ -67,7 +67,7 @@
     border-radius: 5px;
     background-color: #f9f9f9;
     animation: fadeInAnimation ease 2s;
-    animation-delay: 0.7s;
+    animation-delay: 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
