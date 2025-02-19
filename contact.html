@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <title>Commissions</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
@@ -28,6 +28,28 @@
     <div class="contact">
         <div class="pagetitle">
             <h1>Contact</h1>
+        </div>
+
+        <div class="socials">
+            <ul>
+                <li><a><img src="Assets/Images/inbox.svg" alt="inbox logo"></a></li>
+                <li><a><img src="Assets/Images/instagram.svg" alt="instagram logo"></a></li>
+                <li><a><img src="Assets/Images/image.svg" alt="Etsy logo"></a></li>
+            </ul>
+        </div>
+
+        <div class="emailform">
+            <form action="mailto:bellasheepfan@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <textarea id="subject" name="subject" required style="font-size: 1em;"></textarea>
+                <label for="description">Description</label>
+                <textarea id="description" name="description" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
     </div>
