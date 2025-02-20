@@ -33,7 +33,7 @@
     justify-content: center;
     list-style: none;
     background-color: #CF7793;
-    border: #CF7793 2px solid;
+    border: #ffffff 2px solid;
     border-radius: 30px;
     padding: 10px 10px;
     margin: 0 30px;
@@ -60,12 +60,11 @@
     justify-content: center;
     align-items: center;
     color: black;
-    margin: 0 auto;
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+    margin: auto auto;
+    width: 80%;
+    border: 0.4vh solid #CF7793;
+    border-radius: 15vh;
+    background-color: #893271;
     animation: fadeInAnimation ease 2s;
     animation-delay: 0.3s;
     animation-iteration-count: 1;
@@ -83,6 +82,14 @@
     gap: 2vh;
     font-size: 1em;
     font-family: sans-serif;
+    color: white;
+}
+
+.emailform form label {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+
 }
 
 input[type="text"] {
@@ -95,21 +102,63 @@ textarea {
 }
 
 #name {
-    height: 2vh;
+    height: 3vh;
     width: 40%;
 }
 
 #email {
-    height: 2vh;
+    height: 3vh;
     width: 40%;
 }
 
 #subject {
-    height: 2vh;
+    height: 5vh;
     width: 60%;
 }
 
 #description {
     height: 10vh;
     width: 60%;
+}
+
+input[type="submit"] {
+    background-color: #CF7793;
+    color: white;
+    border: 0.2vh solid #ffffff;
+    border-radius: 15vh;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+input[type="submit"]:active {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px) {
+    .emailform {
+        width: 80%;
+    }
+
+    #name {
+        width: 80%;
+    }
+
+    #email {
+        width: 80%;
+    }
+
+    #subject {
+        width: 80%;
+    }
+
+    #description {
+        width: 80%;
+    }
 }

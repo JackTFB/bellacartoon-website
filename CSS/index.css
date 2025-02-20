@@ -17,8 +17,8 @@
     height: 40vh;
     width: 60%;
     margin: 40px auto;
-    border: 2px hidden;
-    border-radius: 20px;
+    border: 0.2vh hidden;
+    border-radius: 2vh;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -29,7 +29,7 @@
     height: 100%;
     object-fit: contain;
     transform: scale(3) translateY(10%);
-    filter: blur(5px);
+    filter: blur(0.5vh);
     transition: filter 0.5s ease;
 }
 
@@ -48,8 +48,8 @@
     font-size: 2vw;
     font-weight: bold;
     text-align: center;
-    border: #333333 2px solid;
-    padding: 20px;
+    border: #333333 0.2vh solid;
+    padding: 2vh;
 }
 
 .splasharttext h1 {
@@ -64,12 +64,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 2vh;
     width: 50%;
     background-color: #893271;
-    border: #CF7793 2px solid;
-    border-radius: 15px;
-    margin: 40px auto;
+    border: #CF7793 0.2vh solid;
+    border-radius: 1.5vh;
+    margin: 4vh auto;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -77,16 +77,16 @@
 }
 
 .about h2 {
-    font-size: 2vw;
+    font-size: 4em;
     font-weight: bold;
     font-family: sans-serif;
-    margin: 20px 0;
+    margin: 2vh 0;
     align-self: flex-start;
 }
 
 .about p {
-    font-size: 1vw;
-    margin: 20px 0;
+    font-size: 1.5em;
+    margin: 2vh 0;
     align-self: flex-end;
     font-family: Courier New, monospace;
 }
