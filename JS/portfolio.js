@@ -25,6 +25,11 @@ async function fetchPortfolioImages() {
                 img.src = file.download_url;
                 img.alt = file.name;
                 img.classList.add('portfolioimage');
+                if (localStorage.getItem('darkMode') === 'enabled') {
+                    portfolioitem.classList.add('dark-mode');
+                } else {
+                    portfolioitem.classList.remove('dark-mode');
+                }
                 img.style.display = 'block';
                 portfolioitem.appendChild(img);
                 portfolio.appendChild(portfolioitem);

@@ -36,7 +36,7 @@
     animation-delay: 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease,  background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
 
 .commissions ul li:hover {
@@ -130,4 +130,31 @@
     .commissioninfo {
         margin: 10vh 2vw;
     }
+}
+
+/* Dark Mode */
+
+.commissioninfo {
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
+}
+
+.commissions.dark-mode ul li {
+    background-color: #333333;
+    border-color: darkred;
+    color: white;
+}
+
+.commissioninfo.dark-mode {
+    background-color: #333333;
+    border-color: darkred;
+    color: white;
+}
+
+.commissioninfo.dark-mode a {
+    border-color: darkred;
+    color: white;
+}
+
+.commissioninfo.dark-mode a:hover {
+    color: red;
 }

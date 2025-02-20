@@ -31,7 +31,7 @@
     background-color: #893271;
     border: 2px solid #CF7793;
     border-radius: 30px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
 
 .project:hover {
@@ -49,5 +49,13 @@
     background-color: #893271;
     text-align: center;
     margin: auto;
+    color: white;
+}
+
+/* Dark Mode */
+
+.projects.dark-mode .project{
+    background-color: #333333;
+    border-color: darkred;
     color: white;
 }

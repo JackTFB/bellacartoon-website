@@ -91,3 +91,12 @@
     font-family: Courier New, monospace;
 }
 
+.about {
+    transition: background-color 0.5s, border-color 0.5s;
+}
+
+.about.dark-mode {
+    background-color: #333333;
+    border-color: darkred;
+}
+

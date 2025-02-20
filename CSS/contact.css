@@ -37,7 +37,7 @@
     border-radius: 30px;
     padding: 10px 10px;
     margin: 0 30px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
     font-family: Courier New, monospace;
 }
 
@@ -130,7 +130,7 @@ input[type="submit"] {
     font-size: 1em;
     font-family: sans-serif;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
@@ -161,4 +161,26 @@ input[type="submit"]:active {
     #description {
         width: 80%;
     }
+}
+
+/* Dark Mode */
+
+
+.emailform {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.socials.dark-mode ul li {
+    background-color: #444444;
+    border-color: darkred;
+}
+
+.emailform.dark-mode {
+    border-color: darkred;
+    background-color: #333333;
+}
+
+.emailform.dark-mode form input[type='submit'] {
+    background-color: #444444;
+    border-color: darkred;
 }
